@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+body
+{	/*background-image:url("../image/background 3.jpg");*/
+	background-color:#F8DFAE; /*màu nền trang web */
+	color: #73716;
+	font-family:'Sarabun', sans-serif;
+	font-size: 16px;
+	background-repeat: no-repeat;
+		background-position: 50%;
+	margin: 0
+}
+a{ text-decoration: none;color:#fff }
+h1{	font-size: 40px;color:red;}
+h2{	font-size: 36px}
+h3{	font-size: 42px;color:red} 
+nav a.logo img{width: 150px; height: auto}
+h1,h2,h3 
+{
+	font-family: 'Cormorant Garamond',Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color: #191612
+}
+
+.btn-primary
+{   
+	background-color: red;
+	color: #fff;
+	padding: 10px 15px;
+	border-radius: 200px;
+	border: none;
+	cursor: pointer;
+}
+ a .btn-primary:hover{ background-color:#f5ec27;color: red}
+
+* {box-sizing: border-box}
+.col-1 { width: 8.333333%}
+.col-2 { width: 16.66%}
+.col-3 { width: 25%}
+.col-4 { width: 33.33333%}
+.col-5{ width: 41.66%}
+.col-6 { width: 50%}
+.col-7 { width: 58.33%}
+.col-8 { width: 66.66%}
+.col-9 { width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12 { width: 100%}
+.container { width: 90%; margin: auto}
+[class*="col-"]
+{
+	border: 0px solid red;
+	padding:15px
+}
+
+.img-100 { width: 100%; height: auto}
+.row { display: flex; flex-wrap: wrap}
+
+nav
+{ 
+	background: white;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+	z-index: 999
+}
+nav .container
+{
+	display: flex; /*lệnh cho nằm cạnh nhau*/
+	justify-content: space-between; /*lệnh căn đều các đối tượng trên cùng 1 hàng*/
+	align-items: center
+}
+nav a.logo img { width: 150px; height: auto}
+
+nav .menu ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none; /*	kiểu đầu dòng*/
+	display: flex; /*lệnh cho nằm cạnh nhau*/
+	margin-bottom: 0px; /*	lệnh đẩy các đối tượng phía dưới*/
+	perspective: 100px
+	
+	}
+nav .menu ul li { position: relative} /*định vị vị trí cho đối tượng*/
+nav .menu ul li a
+{
+	color:#000000;
+	text-decoration: none;
+	padding: 10px 25px;
+	text-transform: uppercase;
+	display: block; 
+	font-size: 18px;
+	font-weight: bold
+}nav .menu ul ul li a{color:#FF0004}
+nav .menu ul li a:hover
+{
+	color: #F8080C;background-color: #f5ec27
+}
+nav .menu ul li a.active
+{
+	background-color:#D6202B;
+	color: #fff
+}
+nav .menu ul ul
+{
+	display: block;
+	background: lightblue;
+	position: absolute;
+	left: 0px;
+	top:100%;
+	width: 200px;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 9999;
+	transform: rotateX(-90deg);
+	transform-origin: left top;
+	transition: all 0.5s
+}
+nav .menu ul li:hover >ul
+{
+	top: 100%; left: 0;
+	visibility: visible;
+	opacity: 1;
+	transform: rotateX(0deg);
+}
+nav .menu ul ul a
+{
+	display: block
+}
+section{padding-top: 100px;text-decoration: none}
+p{line-height: 1.5rem;background:black;color:red;border-radius: 20px;width:300px;height:420px;}
+#vung4 { text-decoration:none}
+
